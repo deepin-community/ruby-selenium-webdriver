@@ -1,0 +1,35 @@
+Source: ruby-selenium-webdriver
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Utkarsh Gupta <guptautkarsh2102@gmail.com>
+Build-Depends: debhelper-compat (= 12),
+               gem2deb,
+               ruby-childprocess (>= 0.5),
+               ruby-zip (>= 1.2.2)
+Standards-Version: 4.5.0
+Vcs-Git: https://salsa.debian.org/ruby-team/ruby-selenium-webdriver.git
+Vcs-Browser: https://salsa.debian.org/ruby-team/ruby-selenium-webdriver
+Homepage: https://github.com/SeleniumHQ/selenium
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+Rules-Requires-Root: no
+
+Package: ruby-selenium-webdriver
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter,
+         ruby-childprocess (>= 0.5),
+         ruby-zip (>= 1.2.2),
+         ${misc:Depends},
+         ${shlibs:Depends}
+Recommends: chromium-driver | chromedriver | phantomjs
+Suggests: firefoxdriver (>= 3.14.0)
+Description: Browser automation framework and ecosystem
+ Selenium is an umbrella project encapsulating a variety of tools and libraries
+ enabling web browser automation. Selenium specifically provides infrastructure
+ for the W3C WebDriver specification — a platform and language-neutral coding
+ interface compatible with all major web browsers.
+ .
+ Selenium uses a custom build system, aptly named crazyfun available on all fine
+ platforms (Linux, Mac, Windows).

@@ -1,0 +1,43 @@
+ruby-selenium-webdriver (3.142.7+dfsg-2) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * debian/copyright: use spaces rather than tabs to start continuation
+    lines.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit.
+
+  [ Cédric Boutillier ]
+  * Loosen dependency on childrenprocess in gemspec to allow v4.x
+  * Bump Standards-Version to 4.5.0 (no changes needed)
+
+ -- Cédric Boutillier <boutil@debian.org>  Fri, 31 Jul 2020 12:55:56 +0200
+
+ruby-selenium-webdriver (3.142.7+dfsg-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Hideki Yamane <henrich@debian.org>  Fri, 03 Jan 2020 11:23:05 +0900
+
+ruby-selenium-webdriver (3.142.6+dfsg-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 3.142.6+dfsg (Closes: #942233)
+
+  [ Utkarsh Gupta ]
+  * Add salsa-ci.yml
+
+  [ Hideki Yamane ]
+  * debian/copyright: drop removed files from upstream in Files-Excluded:
+  * debian/control
+    - set Standards-Version: 4.4.1
+    - use dh12
+  * disable some unnecessary tests in salsa-ci
+
+ -- Hideki Yamane <henrich@debian.org>  Wed, 16 Oct 2019 21:23:54 +0900
+
+ruby-selenium-webdriver (3.141.0+dfsg-1) unstable; urgency=medium
+
+  * Initial release (Closes: #918317)
+
+ -- Utkarsh Gupta <guptautkarsh2102@gmail.com>  Sat, 05 Jan 2019 04:52:42 +0530

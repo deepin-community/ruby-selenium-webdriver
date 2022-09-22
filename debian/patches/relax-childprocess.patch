@@ -1,0 +1,16 @@
+Description: relax max version of childprocess to next major version
+Forwarded: https://github.com/SeleniumHQ/selenium/pull/8591
+Author: Cédric Boutillier <boutil@debian.org>
+Last-Update: 2020-07-31
+
+--- a/selenium-webdriver.gemspec
++++ b/selenium-webdriver.gemspec
+@@ -31,7 +31,7 @@
+   s.files = Dir[root + '/**/*'].reject { |e| e =~ /ruby\.iml|build\.desc/ }.map { |e| e.sub(root + '/', '') }
+   s.require_paths = ['lib']
+ 
+-  s.add_runtime_dependency 'childprocess', ['>= 0.5', '< 4.0']
++  s.add_runtime_dependency 'childprocess', ['>= 0.5', '< 5.0']
+   s.add_runtime_dependency 'rubyzip', ['>= 1.2.2']
+ 
+   # childprocess requires ffi on windows but doesn't declare it in its dependencies
